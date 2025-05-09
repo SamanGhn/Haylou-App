@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Haylou Chat</title>
+  <style>
+    body { font-family: Arial; background: #f5f5f5; padding: 20px; }
+    #chat { border: 1px solid #ccc; padding: 10px; height: 300px; overflow-y: scroll; background: white; }
+    #msgBox { margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h2>Haylou Chat</h2>
+  <div id="chat"></div>
+  <div id="msgBox">
+    <input type="text" id="username" placeholder="Your name" />
+    <input type="text" id="message" placeholder="Type a message..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
